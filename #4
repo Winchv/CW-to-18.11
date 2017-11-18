@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
 int n1, n2, i, i1, k;
-//int *arr1 = new int[1000];
 cout « "Enter array number: " « endl;
 cin » n1;
 int *arr2 = new int[n1];
@@ -32,6 +31,9 @@ cout « arr[i][j]; cout « " ";
 } else {cout « arr[i][j] « endl;};
 };
 };
+
+delete [] arr;
+delete [] arr2;
 
 return 0;
 }
